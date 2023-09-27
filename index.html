@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confronto Finanziamento Auto vs Noleggio a Lungo Termine</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-blue-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-semibold text-center mb-8">Confronto Finanziamento Auto vs Noleggio a Lungo Termine</h1>
+        <div class="bg-white shadow-md rounded-lg p-4 mx-auto" style="max-width: 500px;">
+            <form>
+                <div class="mb-4">
+                    <label for="serviceCost" class="font-semibold block">Costo del servizio (Noleggio a Lungo Termine):</label>
+                    <input type="number" id="serviceCost" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il costo del servizio per il noleggio a lungo termine">
+                </div>
+                <div class="mb-4">
+                    <label for="autoServiceCost" class="font-semibold block">Costo del servizio (Finanziamento Auto):</label>
+                    <input type="number" id="autoServiceCost" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il costo del servizio per il finanziamento auto">
+                </div>
+                <div class="mb-4">
+                    <label for="insuranceCost" class="font-semibold block">Costo Assicurazione (Finanziamento Auto):</label>
+                    <input type="number" id="insuranceCost" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il costo dell'assicurazione per il finanziamento auto">
+                </div>
+                <div class="mb-4">
+                    <label for="maintenanceCost" class="font-semibold block">Costo Manutenzione ordinaria (Finanziamento Auto):</label>
+                    <input type="number" id="maintenanceCost" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il costo della manutenzione ordinaria per il finanziamento auto">
+                </div>
+                <div class="mb-4">
+                    <label for="tireCost" class="font-semibold block">Costo Pneumatici (Finanziamento Auto):</label>
+                    <input type="number" id="tireCost" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il costo dei pneumatici per il finanziamento auto">
+                </div>
+                <div class="mb-4">
+                    <label for="usedCarValue" class="font-semibold block">Ricavo dalla vendita dell’usato (se opzione - Finanziamento Auto):</label>
+                    <input type="number" id="usedCarValue" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il ricavo dalla vendita dell'usato per il finanziamento auto">
+                </div>
+            </form>
+            <div class="text-center">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" id="calculateButton">Calcola</button>
+            </div>
+            <div class="text-center mt-3">
+                <strong class="font-semibold">Risultato Finanziamento Auto:</strong> <span id="financingResult" class="text-green-600"></span>
+            </div>
+            <div class="text-center mt-3">
+                <strong class="font-semibold">Costo del servizio (Noleggio a Lungo Termine):</strong> <span id="longTermRentalCost" class="text-green-600"></span>
+            </div>
+            <div class="mt-4">
+                <h2 class="text-lg font-semibold mb-2" style="font-weight: 700;">Calcolo finale su 36 mesi</h2>
+                <p>Il costo del finanziamento auto include il costo dell'assicurazione, il costo della manutenzione ordinaria, il costo dei pneumatici e il costo del servizio. Se è presente il ricavo dalla vendita dell'usato (se opzione), verrà sottratto dal totale.</p>
+                <p>Il costo del noleggio a lungo termine include solo il costo del servizio.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
