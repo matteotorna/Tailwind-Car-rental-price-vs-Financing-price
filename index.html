@@ -22,6 +22,10 @@
                     <input type="number" id="autoServiceCost" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il costo del servizio per il finanziamento auto">
                 </div>
                 <div class="mb-4">
+                    <label for="interestRateFinancing" class="font-semibold block">Tasso di Interesse Finanziamento Auto (%):</label>
+                    <input type="number" id="interestRateFinancing" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il tasso di interesse per il finanziamento auto">
+                </div>
+                <div class="mb-4">
                     <label for="insuranceCost" class="font-semibold block">Costo Assicurazione (Finanziamento Auto):</label>
                     <input type="number" id="insuranceCost" class="w-full p-2 border border-gray-300 rounded" placeholder="Inserisci il costo dell'assicurazione per il finanziamento auto">
                 </div>
@@ -50,12 +54,11 @@
             <div class="mt-4">
                 <h2 class="text-lg font-semibold mb-2" style="font-weight: 700;">Calcolo finale su 36 mesi</h2>
                 <p>Il costo del finanziamento auto include il costo dell'assicurazione, il costo della manutenzione ordinaria, il costo dei pneumatici e il costo del servizio. Se è presente il ricavo dalla vendita dell'usato (se opzione), verrà sottratto dal totale.</p>
-                <p>Il costo del noleggio a lungo termine include solo il costo del servizio.</p>
+                <p>Il costo del noleggio a lungo termine include solo il costo del servizio. E' presente anche il tasso di interesse</p>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
